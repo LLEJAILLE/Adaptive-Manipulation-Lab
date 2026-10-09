@@ -1,0 +1,158 @@
+{
+  "demonstration_transitions": 9067,
+  "human_mean_simulated_seconds": 6.034799999999698,
+  "bc_mean_contact_seconds": 6.700000000000084,
+  "bc_mean_reward": 210.57585807256189,
+  "bc_mean_final_distance": 0.09389604051766239,
+  "sac_last_validation": {
+    "global_step": 90000.0,
+    "episodes": 549.0,
+    "mean_reward": 231.71617725009352,
+    "success_rate": 1.0,
+    "mean_distance": 0.1265796873031091
+  },
+  "sac_last_logged_episode": {
+    "global_step": 98651,
+    "episode": 634,
+    "seed": 3000010,
+    "steps": 101,
+    "total_reward": 231.85675427088327,
+    "success": true,
+    "final_distance": 0.1272553906077934,
+    "success_rate_100": 1.0,
+    "elapsed": 1023.4688721999992,
+    "simulated_elapsed": 2.002000000000001,
+    "reason": "contact"
+  },
+  "sac_last_stats": {
+    "global_step": 95000,
+    "episodes": 596,
+    "mean_reward_100": 230.92821940354688,
+    "success_rate_100": 1.0,
+    "actor_loss": -114.9750545059204,
+    "critic_loss": 4.3435617051124575,
+    "alpha_loss": -0.0023450705617666,
+    "alpha": 0.0546315424144268,
+    "updates": 95000,
+    "steps_per_second": 96.56048926055443,
+    "elapsed": 983.8394415999646,
+    "phase": "sac",
+    "actor_update_fraction": 1.0,
+    "critic_warmup_remaining": 0
+  },
+  "historical_replay_below_30cm_percent": 0.1875,
+  "sac_last_critic_diagnostics": {
+    "global_step": 95000.0,
+    "updates": 95000.0,
+    "q1_mean": 114.63418768310548,
+    "q2_mean": 114.63426894989014,
+    "q_target_mean": 114.6342428955078,
+    "q_target_std": 48.29775792694092,
+    "q_gap_mean": 0.6284746388316155,
+    "td_abs_mean": 0.6743102051138878,
+    "td_mse_terminal": 470.3271933540315,
+    "td_mse_nonterminal": 1.5867821587278057,
+    "terminal_samples": 7528.0,
+    "nonterminal_samples": 1272472.0,
+    "entropy_mean": -3.9991539670467375,
+    "entropy_error": 0.0008460329532623,
+    "policy_std_0": 0.5595508368372917,
+    "policy_std_1": 0.4695570618093014,
+    "policy_std_2": 0.4562734357357025,
+    "policy_std_3": 0.2086958149313926,
+    "policy_action_saturation_0": 0.23751875,
+    "policy_action_saturation_1": 0.3009046875,
+    "policy_action_saturation_2": 0.45086953125,
+    "policy_action_saturation_3": 0.02707734375
+  },
+  "paired_evaluation": {
+    "independent": {
+      "bc": {
+        "episodes": 50,
+        "successes": 50,
+        "success_rate": 1.0,
+        "success_wilson_95": [
+          0.9286524008666414,
+          1.0
+        ],
+        "mean_return": 213.26257212728905,
+        "mean_episode_seconds": 5.9591199999999604,
+        "mean_contact_seconds": 5.9591199999999604,
+        "mean_steps": 298.36,
+        "mean_final_distance": 0.11044265965935127,
+        "failures": []
+      },
+      "sac": {
+        "episodes": 50,
+        "successes": 50,
+        "success_rate": 1.0,
+        "success_wilson_95": [
+          0.9286524008666414,
+          1.0
+        ],
+        "mean_return": 231.7705877227038,
+        "mean_episode_seconds": 2.014359999999981,
+        "mean_contact_seconds": 2.014359999999981,
+        "mean_steps": 101.14,
+        "mean_final_distance": 0.13010447816258744,
+        "failures": []
+      },
+      "paired": {
+        "common_successes": 50,
+        "faster_sac_common": 50,
+        "mean_common_delta_seconds": -3.9447599999999796,
+        "delta_return": 18.50801559541476,
+        "delta_seconds": -3.9447599999999796,
+        "delta_steps": -197.22,
+        "delta_progress_reward": -0.3932363700647253,
+        "delta_proximity_reward": -0.8207480345205178,
+        "delta_time_penalty": 19.722000000000175,
+        "delta_terminal_reward": 0.0
+      }
+    },
+    "validation": {
+      "bc": {
+        "episodes": 6,
+        "successes": 6,
+        "success_rate": 1.0,
+        "success_wilson_95": [
+          0.6096657120978346,
+          1.0
+        ],
+        "mean_return": 210.57585469093442,
+        "mean_episode_seconds": 6.700000000000084,
+        "mean_contact_seconds": 6.700000000000084,
+        "mean_steps": 335.3333333333333,
+        "mean_final_distance": 0.09389609710414139,
+        "failures": []
+      },
+      "sac": {
+        "episodes": 6,
+        "successes": 6,
+        "success_rate": 1.0,
+        "success_wilson_95": [
+          0.6096657120978346,
+          1.0
+        ],
+        "mean_return": 231.71617715076152,
+        "mean_episode_seconds": 2.070333333333313,
+        "mean_contact_seconds": 2.070333333333313,
+        "mean_steps": 104.0,
+        "mean_final_distance": 0.12657968873049827,
+        "failures": []
+      },
+      "paired": {
+        "common_successes": 6,
+        "faster_sac_common": 6,
+        "mean_common_delta_seconds": -4.62966666666677,
+        "delta_return": 21.140322459827118,
+        "delta_seconds": -4.62966666666677,
+        "delta_steps": -231.33333333333334,
+        "delta_progress_reward": -0.6536718325271286,
+        "delta_proximity_reward": -1.3393390409790698,
+        "delta_time_penalty": 23.133333333333564,
+        "delta_terminal_reward": 0.0
+      }
+    }
+  }
+}

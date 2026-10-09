@@ -1,0 +1,36 @@
+{
+  "total_steps": 1200,
+  "max_episodes": null,
+  "max_episode_steps": 1000,
+  "physics_steps": 10,
+  "arm_speed": 0.8726646259971648,
+  "gripper_speed": 0.045,
+  "replay_capacity": 5000,
+  "batch_size": 64,
+  "start_steps": 100,
+  "update_after": 100,
+  "updates_per_step": 1,
+  "log_every": 400,
+  "evaluate_every": 600,
+  "checkpoint_every": 600,
+  "seed": 42,
+  "train_seed_start": 0,
+  "train_seed_stop": 1000000,
+  "validation_seed_start": 1000000,
+  "validation_episodes": 2,
+  "device": "cpu",
+  "torch_threads": 1,
+  "xml_path": null,
+  "sac": {
+    "hidden_sizes": [
+      64,
+      64
+    ],
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "tau": 0.005,
+    "initial_alpha": 0.2,
+    "automatic_entropy": true,
+    "target_entropy": null
+  }
+}

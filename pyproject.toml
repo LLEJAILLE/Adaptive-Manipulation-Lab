@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adaptive-manipulation-lab"
+version = "0.1.0"
+description = "MuJoCo robot reaching with gamepad demonstrations, behavior cloning and SAC"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "mujoco>=3.3", "gymnasium>=1.0", "torch>=2.2"]
+
+[project.optional-dependencies]
+interactive = ["pygame>=2.6"]
+analysis = ["matplotlib>=3.8", "pandas>=2.2"]
+
+[project.scripts]
+aml = "adaptive_manipulation.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["adaptive_manipulation*"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"

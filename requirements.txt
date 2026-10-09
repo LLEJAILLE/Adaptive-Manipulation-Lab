@@ -1,0 +1,2 @@
+# Dependency definitions live in pyproject.toml.
+-e .[interactive,analysis]

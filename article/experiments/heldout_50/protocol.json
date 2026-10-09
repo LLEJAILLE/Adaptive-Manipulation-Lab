@@ -1,0 +1,145 @@
+{
+  "protocol": "paired_frozen_policies_v1",
+  "independent_seeds": [
+    9000000,
+    9000001,
+    9000002,
+    9000003,
+    9000004,
+    9000005,
+    9000006,
+    9000007,
+    9000008,
+    9000009,
+    9000010,
+    9000011,
+    9000012,
+    9000013,
+    9000014,
+    9000015,
+    9000016,
+    9000017,
+    9000018,
+    9000019,
+    9000020,
+    9000021,
+    9000022,
+    9000023,
+    9000024,
+    9000025,
+    9000026,
+    9000027,
+    9000028,
+    9000029,
+    9000030,
+    9000031,
+    9000032,
+    9000033,
+    9000034,
+    9000035,
+    9000036,
+    9000037,
+    9000038,
+    9000039,
+    9000040,
+    9000041,
+    9000042,
+    9000043,
+    9000044,
+    9000045,
+    9000046,
+    9000047,
+    9000048,
+    9000049
+  ],
+  "selection_seeds": [
+    3000007,
+    3000016,
+    3000022,
+    3000024,
+    3000025,
+    3000029
+  ],
+  "deterministic": true,
+  "device": "cpu",
+  "timestamp_utc": "2026-10-09T14:16:51.392849+00:00",
+  "checkpoints": {
+    "bc": {
+      "path": "runs/bc_gamepad/best.pt",
+      "sha256": "acda556c43bcbfc40c6c8b0683e305153d29d5d89f12df50fe1fd9dea6eb2d2b",
+      "epoch": 16,
+      "training_step": null
+    },
+    "sac": {
+      "path": "runs/sac_from_bc/best.pt",
+      "sha256": "4ea1cd3dc1075eb47f43483b36ebeb04fcd437325c4823c4edb34a8f24888731",
+      "epoch": null,
+      "training_step": 90000
+    }
+  },
+  "prior_seed_audit": {
+    "runs\\bc_gamepad\\config.json": "f2231da48ecbe51d79a8e445c918c13a32688ee17179f598666375730ddb6472",
+    "runs\\bc_smoke\\config.json": "16563a2f91cb2b24137d42b58931e42302313c19a0d19521f904bbd6c8af745c",
+    "runs\\sac1\\config.json": "8a3ad4a1b586a61be83d472e19518d3f476a9aa98b932174e8541dbd2e63cfc0",
+    "runs\\sac_fixed_seed42\\config.json": "7b725458b8d6c328c90bdeb85899b5f04c3b7475d184b02a1aca95ecc6136dfd",
+    "runs\\sac_from_bc\\config.json": "6bec89718ea401f7c07799022f2ee01a37bba35c0a46050e7a6aa7d47f8f5484",
+    "runs\\sac_from_bc_smoke\\config.json": "f4b0b85f56ffe4ecab3e1543bfc6a3dbac440a3fffd8c584cece203f45dcd4aa",
+    "runs\\sac_from_bc_warmup_check\\config.json": "a490ea8d4aaba7461595b3b2488a3e34d6a6028f6692ee2794dc44fca4653bb4",
+    "demonstrations\\gamepad_30\\session.json": "e83bcbdb70cd312c0ffb59feca3da7478ea0ffdf97e9b2e57410de033b7cc861",
+    "runs\\bc_gamepad\\best_validation_episodes.csv": "bbd5801e33b239b5951e3b21b775dd5610e0a24f85082dfce64cafc1c91bd06e",
+    "runs\\bc_smoke\\best_validation_episodes.csv": "398ab6d8a604727c99e4aca7cce40dd4f5ebf6e3343586a090dc4a89855eeb4a",
+    "runs\\bc_smoke\\evaluation_new.csv": "9a6f94b206b9499e133268eea172242af16858a5852941e638c78b4ad43098e7",
+    "runs\\evaluations\\bc_gamepad_20261009_130109_113938.csv": "1d9eb8acb6b2dab87118e6c01c0477bcc78aa74d5324defa800eaa13d01120cc",
+    "runs\\evaluations\\bc_gamepad_20261009_130201_572694.csv": "adc7e5d0684bb17c0334aa5dc5149487814c3d8c9c26127df4656de4db041b13",
+    "runs\\evaluations\\bc_gamepad_20261009_143359_761878.csv": "c0ffc4d97c5540b08c106d73dd6c4881a135eb60ba7c585cc4a3578e99e48e66",
+    "runs\\evaluations\\bc_gamepad_20261009_144850_662753.csv": "55a47739b8a54a42d1739a2a5c25a61c675351a9f498140c89268396f6adc2d5",
+    "runs\\evaluations\\bc_gamepad_20261009_150049_554938.csv": "b64942dc1ee6a0a0e8dd6069c8798a6308a77053b48f65540f8605a2e8d69f15",
+    "runs\\evaluations\\bc_gamepad_20261009_150236_304699.csv": "8f0be27c41093adb45bd32735c730aa7b088990739a1587de524459be2668a18",
+    "runs\\sac1\\episodes.csv": "f2e9ddcfe21ec35923a2f9b68e851afd3b329097dbdd043bab3ad5bdcd0642b5",
+    "runs\\sac_fixed_seed42\\episodes.csv": "0604ffbc78cc4c0f6916d3b26b500e2e5a1176f00cdeb0c8d15d7565b3e9b0fa",
+    "runs\\sac_from_bc\\episodes.csv": "1dd9f2866f9499a438c3e66ff55f3be460f02708145031cf029fd7fb4ca52889",
+    "runs\\sac_from_bc_smoke\\episodes.csv": "3ecb7779280f543169b8e9c443402bbca0d83ed1840ae4c03cd6985a23250974",
+    "runs\\sac_from_bc_warmup_check\\episodes.csv": "3ecb7779280f543169b8e9c443402bbca0d83ed1840ae4c03cd6985a23250974",
+    "evaluation.csv": "9fe2e1f9d7a7cc8ad24fabb61c403a46e452f17df66da5c83b9981ac7f8a354b"
+  },
+  "python": "3.12.10",
+  "torch": "2.14.1+cu126",
+  "mujoco": "3.15.0",
+  "script_sha256": "c59ebbcaf6fbec0110d518e88ab460aacaec96de27409b7a73b29197124ccfee",
+  "environment_signature": {
+    "observation_version": 2,
+    "task_version": 2,
+    "observation_dim": 38,
+    "action_dim": 4,
+    "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+    "physics_steps": 10,
+    "max_steps": 1000,
+    "max_duration": 20.0,
+    "decision_dt": 0.02,
+    "increments": [
+      0.017453292519943295,
+      0.017453292519943295,
+      0.017453292519943295,
+      0.0009
+    ],
+    "limits": [
+      [
+        -3.14,
+        3.14
+      ],
+      [
+        -1.57,
+        1.57
+      ],
+      [
+        -2.35,
+        2.35
+      ],
+      [
+        0.0,
+        0.045
+      ]
+    ],
+    "action_semantics": "incremental_position_v1"
+  }
+}

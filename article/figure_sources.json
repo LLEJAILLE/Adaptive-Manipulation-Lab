@@ -1,0 +1,22 @@
+{
+  "article/experiments/heldout_50/paired_independent.csv": "eae50a62f1a3f5ca018dcbd98cccb4c519cb7fc82fbcbff36ded19225c1b3122",
+  "article/experiments/heldout_50/paired_validation.csv": "ffc08a92a183a0c82beff5ebbec34f5f0c98a8e3dad6ea500a48c35abe668855",
+  "article/experiments/heldout_50/protocol.json": "077a60629d88aafa2023bc87ba3a3783c5dfbb326ab9e6fe892f3011ba2c6a7d",
+  "article/experiments/heldout_50/summary.json": "78d4ff5b12c49ac2125415597fe3a0aebe1ee7963ae08ca533d1036f70caba53",
+  "demonstrations/gamepad_30/episode_0001.npz": "aa0f099223c144a499b1b004f38c466954107cdb3e4a4bba5ff3b402febcc0e0",
+  "demonstrations/gamepad_30/episode_0008.npz": "b660218c17ceeea29a95acc39feb5d23fbdbb8077a863caf8e7b52c070f880ad",
+  "demonstrations/gamepad_30/episode_0017.npz": "14365492d7edba0b54c7d654ca430c2c67a4ce6693daa104d9c4f55084cc3a86",
+  "demonstrations/gamepad_30/episode_0030.npz": "6e3e21bee4abf6c2131ca3ad1b929645353c375a556abef900da6f052bfd8b75",
+  "demonstrations/gamepad_30/session.json": "e83bcbdb70cd312c0ffb59feca3da7478ea0ffdf97e9b2e57410de033b7cc861",
+  "models/robot_arm.xml": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+  "reports/sac_audit_metrics.json": "c13b6c87792dbd32fab9a8667f12e2aba0ab6aa02647bb220be0de28ce9e6f4f",
+  "runs/bc_gamepad/best_validation_episodes.csv": "bbd5801e33b239b5951e3b21b775dd5610e0a24f85082dfce64cafc1c91bd06e",
+  "runs/bc_gamepad/metrics.csv": "70d80e623b07b93b661819e52b8398673665c3250a5100fa807bb97d9824821f",
+  "runs/bc_gamepad/split.json": "77d8bff8024c973dbf55cc0c37dbd7ed58c92b4f03d569567a244c4f5a6d65da",
+  "runs/bc_gamepad/summary.json": "152d0ce3b689f87e0f2b2fd1198b362753b3f91a384cb2ad8aa6fd1a85fe5901",
+  "runs/sac_from_bc/actions.csv": "69d5c1cb72054f83b860e2c2885b6fbb109d10c951bd0595deb32e61faa1e827",
+  "runs/sac_from_bc/critics.csv": "48b9c07951e7e9e6a28b5564eb3e39c33efc691a1993286d3d79ea8842c4e428",
+  "runs/sac_from_bc/episodes.csv": "1dd9f2866f9499a438c3e66ff55f3be460f02708145031cf029fd7fb4ca52889",
+  "runs/sac_from_bc/stats.csv": "6de47e6446afb868a9e8f9429d01720a492d4842e56580cf56febc8169eeba6b",
+  "runs/sac_from_bc/validation.csv": "5732c7c8c5e922b5b45dde2cf733069ce4b944bb63413bad59d2240452767d1c"
+}

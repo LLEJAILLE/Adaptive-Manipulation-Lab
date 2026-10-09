@@ -1,0 +1,1666 @@
+{
+  "format_version": 1,
+  "signature": {
+    "observation_version": 2,
+    "task_version": 2,
+    "observation_dim": 38,
+    "action_dim": 4,
+    "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+    "physics_steps": 10,
+    "max_steps": 1000,
+    "max_duration": 20.0,
+    "decision_dt": 0.02,
+    "increments": [
+      0.017453292519943295,
+      0.017453292519943295,
+      0.017453292519943295,
+      0.0009
+    ],
+    "limits": [
+      [
+        -3.14,
+        3.14
+      ],
+      [
+        -1.57,
+        1.57
+      ],
+      [
+        -2.35,
+        2.35
+      ],
+      [
+        0.0,
+        0.045
+      ]
+    ],
+    "action_semantics": "incremental_position_v1"
+  },
+  "seeds": [
+    3000000,
+    3000001,
+    3000002,
+    3000003,
+    3000004,
+    3000005,
+    3000006,
+    3000007,
+    3000008,
+    3000009,
+    3000010,
+    3000011,
+    3000012,
+    3000013,
+    3000014,
+    3000015,
+    3000016,
+    3000017,
+    3000018,
+    3000019,
+    3000020,
+    3000021,
+    3000022,
+    3000023,
+    3000024,
+    3000025,
+    3000026,
+    3000027,
+    3000028,
+    3000029
+  ],
+  "completed": [
+    {
+      "episode": 1,
+      "seed": 3000000,
+      "spawn_position": [
+        0.8264185410281177,
+        -0.016201107297880324,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 622,
+      "total_reward": 183.80850427729402,
+      "final_distance": 0.09735713257173016,
+      "simulated_elapsed": 12.434000000000822
+    },
+    {
+      "episode": 2,
+      "seed": 3000001,
+      "spawn_position": [
+        0.4037644641423082,
+        0.007977499658581022,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 199,
+      "total_reward": 219.06452444225454,
+      "final_distance": 0.14811579901902544,
+      "simulated_elapsed": 3.9799999999997833
+    },
+    {
+      "episode": 3,
+      "seed": 3000002,
+      "spawn_position": [
+        0.34877919440659694,
+        -0.19542366887628837,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 308,
+      "total_reward": 211.07651028859098,
+      "final_distance": 0.10411911176246096,
+      "simulated_elapsed": 6.141999999999546
+    },
+    {
+      "episode": 4,
+      "seed": 3000003,
+      "spawn_position": [
+        0.7206898996466775,
+        -0.008892627401366593,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 137,
+      "total_reward": 225.9261315067734,
+      "final_distance": 0.1742840627856538,
+      "simulated_elapsed": 2.721999999999922
+    },
+    {
+      "episode": 5,
+      "seed": 3000004,
+      "spawn_position": [
+        0.37256247295631706,
+        -0.12841682713226024,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 234,
+      "total_reward": 216.2139866052249,
+      "final_distance": 0.13808086803447678,
+      "simulated_elapsed": 4.677999999999707
+    },
+    {
+      "episode": 6,
+      "seed": 3000005,
+      "spawn_position": [
+        0.39984848932947936,
+        0.23547011211020757,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 350,
+      "total_reward": 205.45109211881407,
+      "final_distance": 0.13253988059142846,
+      "simulated_elapsed": 6.981999999999453
+    },
+    {
+      "episode": 7,
+      "seed": 3000006,
+      "spawn_position": [
+        0.6580363789333219,
+        -0.0722133434376106,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 221,
+      "total_reward": 219.11283391562736,
+      "final_distance": 0.14489148690068324,
+      "simulated_elapsed": 4.413999999999736
+    },
+    {
+      "episode": 8,
+      "seed": 3000007,
+      "spawn_position": [
+        0.5510120704508819,
+        -0.16900737483507977,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 163,
+      "total_reward": 224.21435574272738,
+      "final_distance": 0.14401777878113706,
+      "simulated_elapsed": 3.257999999999863
+    },
+    {
+      "episode": 9,
+      "seed": 3000008,
+      "spawn_position": [
+        0.7594222082962194,
+        -0.223735792374424,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 240,
+      "total_reward": 220.28211781417195,
+      "final_distance": 0.11902473030983714,
+      "simulated_elapsed": 4.787999999999695
+    },
+    {
+      "episode": 10,
+      "seed": 3000009,
+      "spawn_position": [
+        0.36883329008153254,
+        -0.24856234906096444,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 309,
+      "total_reward": 209.08982130186322,
+      "final_distance": 0.13731752407829598,
+      "simulated_elapsed": 6.165999999999543
+    },
+    {
+      "episode": 11,
+      "seed": 3000010,
+      "spawn_position": [
+        0.6062181562740947,
+        -0.06284699217333803,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 249,
+      "total_reward": 215.8361897839238,
+      "final_distance": 0.1448948683350847,
+      "simulated_elapsed": 4.965999999999675
+    },
+    {
+      "episode": 12,
+      "seed": 3000011,
+      "spawn_position": [
+        0.6017474612073381,
+        -0.25293670782303446,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 371,
+      "total_reward": 205.05572180175974,
+      "final_distance": 0.13008706383386484,
+      "simulated_elapsed": 7.403999999999407
+    },
+    {
+      "episode": 13,
+      "seed": 3000012,
+      "spawn_position": [
+        0.6628653067556072,
+        0.0648319141705469,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 247,
+      "total_reward": 217.13138640677954,
+      "final_distance": 0.13661938521006806,
+      "simulated_elapsed": 4.927999999999679
+    },
+    {
+      "episode": 14,
+      "seed": 3000013,
+      "spawn_position": [
+        0.6503150341932844,
+        0.11608307832113185,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 345,
+      "total_reward": 208.1888172437139,
+      "final_distance": 0.12323058401843852,
+      "simulated_elapsed": 6.899999999999462
+    },
+    {
+      "episode": 15,
+      "seed": 3000014,
+      "spawn_position": [
+        0.5468301331484958,
+        -0.06282418996893707,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 363,
+      "total_reward": 204.50159414334675,
+      "final_distance": 0.13688251279935368,
+      "simulated_elapsed": 7.2419999999994245
+    },
+    {
+      "episode": 16,
+      "seed": 3000015,
+      "spawn_position": [
+        0.7015077317223097,
+        0.10431038310383423,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 261,
+      "total_reward": 216.19252999761898,
+      "final_distance": 0.13597614615287268,
+      "simulated_elapsed": 5.2079999999996485
+    },
+    {
+      "episode": 17,
+      "seed": 3000016,
+      "spawn_position": [
+        0.4082309509107756,
+        0.12203183463081152,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 405,
+      "total_reward": 200.7464497855799,
+      "final_distance": 0.11676980402996649,
+      "simulated_elapsed": 8.089999999999371
+    },
+    {
+      "episode": 18,
+      "seed": 3000017,
+      "spawn_position": [
+        0.49176083571802387,
+        -0.021758294258335448,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 278,
+      "total_reward": 216.11861934530356,
+      "final_distance": 0.07921710445741073,
+      "simulated_elapsed": 5.551999999999611
+    },
+    {
+      "episode": 19,
+      "seed": 3000018,
+      "spawn_position": [
+        0.706553436877678,
+        -0.03620316345807209,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 594,
+      "total_reward": 182.72955531665522,
+      "final_distance": 0.13807610531968847,
+      "simulated_elapsed": 11.868000000000633
+    },
+    {
+      "episode": 20,
+      "seed": 3000019,
+      "spawn_position": [
+        0.3977212794209034,
+        -0.014747303019807811,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 245,
+      "total_reward": 215.73436250962976,
+      "final_distance": 0.1293979566794732,
+      "simulated_elapsed": 4.891999999999683
+    },
+    {
+      "episode": 21,
+      "seed": 3000020,
+      "spawn_position": [
+        0.7526841377604375,
+        -0.03712423089111244,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 265,
+      "total_reward": 215.37477670354332,
+      "final_distance": 0.14827184611023234,
+      "simulated_elapsed": 5.291999999999639
+    },
+    {
+      "episode": 22,
+      "seed": 3000021,
+      "spawn_position": [
+        0.3609779521471489,
+        0.22036200852191917,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 290,
+      "total_reward": 210.12427279299504,
+      "final_distance": 0.14755881682132774,
+      "simulated_elapsed": 5.791999999999584
+    },
+    {
+      "episode": 23,
+      "seed": 3000022,
+      "spawn_position": [
+        0.7569967709037773,
+        0.1739760965332648,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 370,
+      "total_reward": 206.8936096260121,
+      "final_distance": 0.12251903935565456,
+      "simulated_elapsed": 7.393999999999408
+    },
+    {
+      "episode": 24,
+      "seed": 3000023,
+      "spawn_position": [
+        0.6718997619020501,
+        -0.22312600621110054,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 442,
+      "total_reward": 197.46465108900608,
+      "final_distance": 0.14475700750118997,
+      "simulated_elapsed": 8.831999999999619
+    },
+    {
+      "episode": 25,
+      "seed": 3000024,
+      "spawn_position": [
+        0.46297388793033084,
+        0.1307617966713498,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 415,
+      "total_reward": 201.984385229793,
+      "final_distance": 0.08575979932952965,
+      "simulated_elapsed": 8.283999999999436
+    },
+    {
+      "episode": 26,
+      "seed": 3000025,
+      "spawn_position": [
+        0.8274069054020342,
+        -0.15285036290194529,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 219,
+      "total_reward": 221.67318297105763,
+      "final_distance": 0.1375994232733161,
+      "simulated_elapsed": 4.37799999999974
+    },
+    {
+      "episode": 27,
+      "seed": 3000026,
+      "spawn_position": [
+        0.5149267575978449,
+        0.05499468744954855,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 340,
+      "total_reward": 206.93825584828087,
+      "final_distance": 0.13117208559125879,
+      "simulated_elapsed": 6.795999999999474
+    },
+    {
+      "episode": 28,
+      "seed": 3000027,
+      "spawn_position": [
+        0.7714157439826704,
+        -0.22439560819707519,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 223,
+      "total_reward": 220.61547623792683,
+      "final_distance": 0.14102684787076383,
+      "simulated_elapsed": 4.451999999999732
+    },
+    {
+      "episode": 29,
+      "seed": 3000028,
+      "spawn_position": [
+        0.8245709518643036,
+        -0.12887408636919817,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 179,
+      "total_reward": 225.44798378776014,
+      "final_distance": 0.1397369246595583,
+      "simulated_elapsed": 3.563999999999829
+    },
+    {
+      "episode": 30,
+      "seed": 3000029,
+      "spawn_position": [
+        0.5577738432307302,
+        -0.019181925067643213,
+        0.051000000000000004
+      ],
+      "signature": {
+        "observation_version": 2,
+        "task_version": 2,
+        "observation_dim": 38,
+        "action_dim": 4,
+        "scene_hash": "7b724158f457da2758dee243d7a268a0bafc6b8814f178cc3d096be48da9dda9",
+        "physics_steps": 10,
+        "max_steps": 1000,
+        "max_duration": 20.0,
+        "decision_dt": 0.02,
+        "increments": [
+          0.017453292519943295,
+          0.017453292519943295,
+          0.017453292519943295,
+          0.0009
+        ],
+        "limits": [
+          [
+            -3.14,
+            3.14
+          ],
+          [
+            -1.57,
+            1.57
+          ],
+          [
+            -2.35,
+            2.35
+          ],
+          [
+            0.0,
+            0.045
+          ]
+        ],
+        "action_semantics": "incremental_position_v1"
+      },
+      "status": "complete",
+      "success": true,
+      "reason": "contact",
+      "steps": 183,
+      "total_reward": 222.85362404898626,
+      "final_distance": 0.13268021961704596,
+      "simulated_elapsed": 3.64599999999982
+    }
+  ],
+  "diagnostic_fields": [
+    "action_0",
+    "action_abs_0",
+    "action_saturated_0",
+    "effective_action_0",
+    "action_clipped_0",
+    "target_at_limit_0",
+    "tracking_error_0",
+    "action_1",
+    "action_abs_1",
+    "action_saturated_1",
+    "effective_action_1",
+    "action_clipped_1",
+    "target_at_limit_1",
+    "tracking_error_1",
+    "action_2",
+    "action_abs_2",
+    "action_saturated_2",
+    "effective_action_2",
+    "action_clipped_2",
+    "target_at_limit_2",
+    "tracking_error_2",
+    "action_3",
+    "action_abs_3",
+    "action_saturated_3",
+    "effective_action_3",
+    "action_clipped_3",
+    "target_at_limit_3",
+    "tracking_error_3",
+    "distance_below_30cm"
+  ],
+  "successes": 30,
+  "status": "complete"
+}

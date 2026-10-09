@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Schéma vectoriel du bras robotique Adaptive Robot Arm, articulations J1 J2 J3 et pince parallèle">
+<defs>
+  <style>
+    .title{font:700 37px 'DejaVu Sans',Arial,sans-serif;fill:#18283b}
+    .subtitle{font:400 18px 'DejaVu Sans',Arial,sans-serif;fill:#627084}
+    .label{font:700 23px 'DejaVu Sans',Arial,sans-serif;fill:#18283b}
+    .sub{font:400 17px 'DejaVu Sans',Arial,sans-serif;fill:#66758a}
+    .tiny{font:500 15px 'DejaVu Sans',Arial,sans-serif;fill:#526177}
+    .call{stroke:#66758a;stroke-width:2.4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .dash{stroke:#7b8a9a;stroke-width:2;stroke-dasharray:6 7;fill:none}
+  </style>
+  <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#84919e"/><stop offset="1" stop-color="#414f5e"/></linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5ba6e9"/><stop offset="1" stop-color="#1c65ad"/></linearGradient>
+  <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffb25a"/><stop offset="1" stop-color="#df711e"/></linearGradient>
+  <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f67578"/><stop offset="1" stop-color="#cf414b"/></linearGradient>
+  <linearGradient id="green" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#75d98f"/><stop offset="1" stop-color="#21a05b"/></linearGradient>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#66758a"/></marker>
+  <marker id="orange-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#e68127"/></marker>
+</defs>
+<rect width="1440" height="900" fill="#ffffff"/>
+<text x="74" y="74" class="title">Adaptive Robot Arm</text>
+<text x="76" y="107" class="subtitle">Modèle cinématique MuJoCo · 3 articulations rotatives + pince parallèle</text>
+<line x1="74" y1="129" x2="1368" y2="129" stroke="#e5eaf0" stroke-width="2"/>
+<!-- central panel very subtle -->
+<rect x="65" y="161" width="1310" height="595" rx="22" fill="#fbfcfe" stroke="#e8ecf1" stroke-width="2"/>
+<!-- ground plane -->
+<path d="M195 672 L820 672 L990 744 L365 744 Z" fill="#f0f3f7" stroke="#e2e6ec" stroke-width="2"/>
+<!-- base -->
+<rect x="267" y="605" width="204" height="85" rx="18" fill="url(#metal)" stroke="#334354" stroke-width="3"/>
+<ellipse cx="369" cy="606" rx="102" ry="28" fill="#8b98a4" stroke="#334354" stroke-width="3"/>
+<ellipse cx="369" cy="692" rx="102" ry="23" fill="#4b5967" stroke="#334354" stroke-width="3"/>
+<rect x="306" y="563" width="126" height="47" rx="10" fill="url(#orange)" stroke="#b65a17" stroke-width="3"/>
+<ellipse cx="369" cy="562" rx="63" ry="18" fill="#f6a650" stroke="#b65a17" stroke-width="3"/>
+<path d="M283 584 C290 627 444 632 454 585" class="dash" marker-end="url(#orange-arrow)"/>
+<!-- vertical base to shoulder connector (same blue capsule shape) -->
+<path d="M368 554 L368 507" stroke="#277fc4" stroke-width="43" stroke-linecap="round"/>
+<!-- upper arm capsule from shoulder to elbow, diagonal reach to top right -->
+<path d="M368 520 L594 331" stroke="#15528b" stroke-width="76" stroke-linecap="round"/>
+<path d="M368 520 L594 331" stroke="url(#blue)" stroke-width="63" stroke-linecap="round"/>
+<circle cx="368" cy="520" r="30" fill="url(#orange)" stroke="#b65a17" stroke-width="4"/>
+<circle cx="368" cy="520" r="12" fill="#dbe4ea" stroke="#6c7883" stroke-width="3"/>
+<!-- forearm extends along diagonal down right -->
+<path d="M594 331 L829 442" stroke="#ae5518" stroke-width="65" stroke-linecap="round"/>
+<path d="M594 331 L829 442" stroke="url(#orange)" stroke-width="54" stroke-linecap="round"/>
+<circle cx="594" cy="331" r="32" fill="url(#orange)" stroke="#b65a17" stroke-width="4"/>
+<circle cx="594" cy="331" r="13" fill="#e3e9ed" stroke="#7a8590" stroke-width="3"/>
+<!-- gripper housing -->
+<g transform="translate(824 438) rotate(25)">
+  <rect x="-24" y="-45" width="94" height="90" rx="10" fill="url(#metal)" stroke="#394858" stroke-width="4"/>
+  <path d="M-12 -33 L58 -33" stroke="#b7c1ca" stroke-width="3"/>
+  <circle cx="0" cy="-26" r="5" fill="#354657"/><circle cx="46" cy="26" r="5" fill="#354657"/>
+  <!-- opening direction across tilted y -->
+  <rect x="70" y="-47" width="112" height="20" rx="5" fill="url(#red)" stroke="#b73d46" stroke-width="3"/>
+  <rect x="70" y="27" width="112" height="20" rx="5" fill="url(#red)" stroke="#b73d46" stroke-width="3"/>
+  <circle cx="131" cy="0" r="10" fill="url(#green)" stroke="#118145" stroke-width="2"/>
+  <path d="M96 -52 L96 -80" stroke="#cf414b" stroke-width="2.5"/>
+  <path d="M90 -72 L96 -82 L102 -72" stroke="#cf414b" fill="none" stroke-width="2.5"/>
+  <path d="M96 52 L96 80" stroke="#cf414b" stroke-width="2.5"/>
+  <path d="M90 72 L96 82 L102 72" stroke="#cf414b" fill="none" stroke-width="2.5"/>
+</g>
+<!-- start zone with cube -->
+<path d="M1001 617 L1234 617 L1300 663 L1067 663Z" fill="#ea686a" stroke="#c74249" stroke-width="3"/>
+<path d="M1067 663 L1300 663 L1300 677 L1067 677Z" fill="#b93c45"/>
+<path d="M1001 617 L1067 663 L1067 677 L1001 631Z" fill="#cc4a4f"/>
+<path d="M1108 575 L1170 547 L1232 579 L1169 607Z" fill="#76db93" stroke="#1a874b" stroke-width="3"/>
+<path d="M1108 575 L1169 607 L1169 671 L1108 639Z" fill="#2eac60" stroke="#1a874b" stroke-width="3"/>
+<path d="M1169 607 L1232 579 L1232 642 L1169 671Z" fill="url(#green)" stroke="#1a874b" stroke-width="3"/>
+<!-- annotations left -->
+<text x="112" y="327" class="label">J2 · Épaule</text>
+<text x="112" y="355" class="sub">Rotation autour de Y</text>
+<path d="M309 343 L337 392 L368 485" class="call" marker-end="url(#arrow)"/>
+<text x="109" y="489" class="label">J1 · Base</text>
+<text x="109" y="518" class="sub">Rotation autour de Z</text>
+<path d="M275 505 L300 530 L330 574" class="call" marker-end="url(#arrow)"/>
+<!-- annotations above elbow -->
+<text x="661" y="229" class="label">J3 · Coude</text>
+<text x="661" y="257" class="sub">Rotation autour de Y</text>
+<path d="M678 272 L638 295 L608 309" class="call" marker-end="url(#arrow)"/>
+<!-- gripper annot -->
+<text x="1017" y="282" class="label">Pince parallèle</text>
+<text x="1017" y="310" class="sub">2 articulations coulissantes</text>
+<path d="M1074 327 L1038 380 L895 440" class="call" marker-end="url(#arrow)"/>
+<text x="1061" y="386" class="label">Doigts</text>
+<text x="1061" y="415" class="sub">Ouverture symétrique</text>
+<path d="M1057 424 L1028 449 L967 435" class="call" marker-end="url(#arrow)"/>
+<text x="1006" y="513" class="label">End-effector</text>
+<text x="1006" y="541" class="sub">Site central de la pince</text>
+<path d="M993 510 L958 499 L937 494" class="call" marker-end="url(#arrow)"/>
+<text x="1297" y="555" class="label" text-anchor="end">Cube</text>
+<text x="1297" y="583" class="sub" text-anchor="end">8 cm · 150 g</text>
+<path d="M1260 590 L1232 608" class="call" marker-end="url(#arrow)"/>
+<text x="1042" y="721" class="label">Zone de départ</text>
+<path d="M1138 705 L1138 675" class="call" marker-end="url(#arrow)"/>
+<!-- info row -->
+<text x="79" y="815" class="label" style="font-size:20px">3 DOF rotatifs</text>
+<text x="79" y="844" class="tiny">J1 : ±180°   ·   J2 : ±90°   ·   J3 : ±135°</text>
+<line x1="500" y1="787" x2="500" y2="858" stroke="#e3e8ee" stroke-width="2"/>
+<text x="544" y="815" class="label" style="font-size:20px">Pince parallèle</text>
+<text x="544" y="844" class="tiny">Course de chaque doigt : 0 à 45 mm</text>
+<line x1="997" y1="787" x2="997" y2="858" stroke="#e3e8ee" stroke-width="2"/>
+<text x="1038" y="815" class="label" style="font-size:20px">MJCF / MuJoCo</text>
+<text x="1038" y="844" class="tiny">Schéma conceptuel, hors échelle</text>
+</svg>

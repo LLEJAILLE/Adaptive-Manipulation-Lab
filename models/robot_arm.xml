@@ -1,0 +1,192 @@
+
+<mujoco model="Adaptive Robot Arm">
+
+    <compiler angle="radian"/>
+    <option timestep="0.002"
+            gravity="0 0 -9.81"
+            integrator="implicitfast"/>
+
+    <visual>
+        <global azimuth="135" elevation="-25"/>
+    </visual>
+
+    <asset>
+        <material name="blue" rgba="0.15 0.45 0.85 1"/>
+        <material name="orange" rgba="0.95 0.45 0.15 1"/>
+        <material name="gray" rgba="0.35 0.38 0.42 1"/>
+        <material name="red" rgba="0.85 0.15 0.15 1"/>
+    </asset>
+
+    <worldbody>
+
+        <light pos="0 0 3"/>
+        <geom name="floor" type="plane"
+              size="3 3 0.1"
+              rgba="0.85 0.85 0.85 1"/>
+
+        <!-- Socle fixe -->
+        <body name="base" pos="0 0 0.1">
+            <geom type="cylinder"
+                  size="0.16 0.1"
+                  material="gray"/>
+
+            <!-- Articulation 1 : rotation de la base -->
+            <body name="base_rotation" pos="0 0 0.1">
+                <joint name="joint1"
+                       type="hinge"
+                       axis="0 0 1"
+                       range="-3.14 3.14"
+                       damping="2"/>
+
+                <geom type="cylinder"
+                      size="0.10 0.08"
+                      material="orange"/>
+
+                <!-- Articulation 2 : épaule -->
+                <body name="upper_arm" pos="0 0 0.08">
+                    <joint name="joint2"
+                           type="hinge"
+                           axis="0 1 0"
+                           range="-1.57 1.57"
+                           damping="3"/>
+
+                    <geom type="capsule"
+                          fromto="0 0 0 0 0 0.5"
+                          size="0.055"
+                          mass="2"
+                          material="blue"/>
+
+                    <!-- Articulation 3 : coude -->
+                    <body name="forearm" pos="0 0 0.5">
+                        <joint name="joint3"
+                               type="hinge"
+                               axis="0 1 0"
+                               range="-2.35 2.35"
+                               damping="2"/>
+
+                        <geom type="capsule"
+                              fromto="0 0 0 0 0 0.4"
+                              size="0.04"
+                              mass="1"
+                              material="orange"/>
+
+                        <!-- La pince suit le coude car elle est enfant de forearm. -->
+                        <body name="gripper" pos="0 0 0.44">
+                            <geom type="box" size="0.085 0.025 0.02"
+                                  mass="0.15" material="gray"/>
+
+                            <!-- q=0 : ferme ; q=0.045 : ouvert (en metres). -->
+                            <body name="finger_left" pos="0.023 0 0.02">
+                                <joint name="gripper_left" type="slide"
+                                       axis="1 0 0" limited="true"
+                                       range="0 0.045" damping="2"/>
+                                <geom name="finger_left_geom" type="box"
+                                      pos="0 0 0.06" size="0.01 0.022 0.06"
+                                      mass="0.08" material="red"
+                                      friction="1.2 0.005 0.0001"/>
+                            </body>
+
+                            <body name="finger_right" pos="-0.023 0 0.02">
+                                <joint name="gripper_right" type="slide"
+                                       axis="-1 0 0" limited="true"
+                                       range="0 0.045" damping="2"/>
+                                <geom name="finger_right_geom" type="box"
+                                      pos="0 0 0.06" size="0.01 0.022 0.06"
+                                      mass="0.08" material="red"
+                                      friction="1.2 0.005 0.0001"/>
+                            </body>
+
+                            <!-- Point de prise au milieu des doigts. -->
+                            <site name="end_effector" pos="0 0 0.08"
+                                  size="0.008" rgba="0 1 0 1"/>
+                        </body>
+
+                    </body>
+
+                </body>
+            </body>
+        </body>
+
+        <!-- Position initiale remplacee par Environment a chaque scenario. -->
+        <body name="cube" pos="0.6 0 0.051">
+            <freejoint name="cube_joint"/>
+            <geom name="cube_geom" type="box"
+                size="0.04 0.04 0.04"
+                mass="0.15"
+                rgba="0.2 0.8 0.3 1"
+                friction="1.2 0.005 0.0001"/>
+        </body>
+
+        <!-- <body name="cube2" pos="0.65 0 0.05">
+            <freejoint/>
+            <geom type="box"
+                size="0.04 0.04 0.04"
+                mass="0.15"
+                rgba="0.2 0.8 0.3 1"
+                friction="1.2 0.005 0.0001"/>
+        </body>
+
+        <body name="table" pos="-1.0 0 0">
+            <geom type="box"
+                size="0.6 0.6 0.50"
+                mass="10"
+                rgba="0.8 0.8 0.8 1"
+                friction="1.2 0.005 0.0001"/>
+        </body> -->
+
+
+        <body name="start_zone" pos="0.6 0 0.00">
+            <geom name="start_zone_geom" type="box"
+                size="0.3 0.3 0.01"
+                mass="0.01"
+                rgba="0.8 0.2 0.2 1"
+                friction="1.2 0.005 0.0001"/>
+        </body>
+
+
+        <!-- <body name="goal_zone" pos="-1.0 0 0.5">
+            <geom type="box"
+                size="0.3 0.3 0.01"
+                mass="0.01"
+                rgba="0.2 0.8 0.2 1"
+                friction="1.2 0.005 0.0001"/>
+        </body> -->
+
+
+    </worldbody>
+
+    <!-- Les deux pieces du pivot se chevauchent : leur contact ne doit pas bloquer J1. -->
+    <contact>
+        <exclude body1="base" body2="base_rotation"/>
+    </contact>
+
+    <!-- Moteurs contrôlés en position -->
+    <actuator>
+        <position name="motor1"
+                  joint="joint1"
+                  kp="100"
+                  kv="20"
+                  ctrlrange="-3.141593 3.141593"/>
+
+        <position name="motor2"
+                  joint="joint2"
+                  kp="150"
+                  kv="25"
+                  ctrlrange="-1.57 1.57"/>
+
+        <position name="motor3"
+                  joint="joint3"
+                  kp="100"
+                  kv="15"
+                  ctrlrange="-2.35 2.35"/>
+
+        <!-- Deux moteurs recoivent la meme consigne d'ouverture. -->
+        <position name="gripper_motor_left" joint="gripper_left"
+                  kp="600" kv="15" ctrllimited="true" ctrlrange="0 0.045"
+                  forcelimited="true" forcerange="-20 20"/>
+        <position name="gripper_motor_right" joint="gripper_right"
+                  kp="600" kv="15" ctrllimited="true" ctrlrange="0 0.045"
+                  forcelimited="true" forcerange="-20 20"/>
+    </actuator>
+
+</mujoco>
